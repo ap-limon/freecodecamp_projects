@@ -1,0 +1,240 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+body {
+    font-size: 1.5vw;
+    background-color: #c70039;
+}
+
+/* navbar style goes here */
+
+#navbar {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #c70039;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+@media screen and (max-width:768px){
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+#navbar h1 {
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 60%;
+    word-wrap: none;
+}
+@media screen and (max-width:768px){
+    #navbar h1{
+        width: 100%;
+    }
+}
+
+#navbar ul{
+    list-style-type: none;
+    width: 40%;
+    /* border: 1px solid black; */
+    text-align: right;
+}
+@media screen and (max-width:768px){
+    #navbar ul{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+#navbar ul li {
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+}
+#navbar ul li:hover{
+    border: 1px solid black;
+    background: rgb(87, 238, 150);
+    /* color: black; */
+    transform: translate(5px,3px);
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* welcome section style goes here */
+
+#welcome-section {
+    height: 100vh;
+    background-color: rgb(44, 44, 71);
+    border: 1px solid white;
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#prflpic {
+    border: 1px solid red;
+    border-radius: 10%;
+}
+
+#welcome-section h1 {
+    color: white;
+}
+
+#welcome-section p {
+    color: red;
+}
+
+/* project style goes here */
+
+#projects {
+    /* border: 1px solid black; */
+    padding: 30px 20px 0 20px;
+    color: white;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    background-color: #45567D;
+
+}
+@media screen and (max-width:768px) {
+    #gallery {
+        grid-template-columns: auto;
+    }
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+ 
+.project-tile {
+    position: relative;
+    border: 1px solid black;
+    width: 420px;
+    text-align: center;
+    background-color: #c70039;
+    margin: 10px 0;
+}
+@media screen and (max-width:414px) {
+    .project-tile {
+        width: 300px;
+    }
+    .project-img {
+        max-width: 280px;
+        height: auto;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #45567D;
+} 
+.text {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.project-tile:hover .overlay{
+    opacity: 0.75;
+}
+
+.project-name {
+    background-color: #303841;
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#btn {
+    /* border: 1px solid black; */
+    margin: 10px auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#button {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    background-color: #303841;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#button:hover{
+    border: 1px solid black;
+    background: rgb(87, 238, 150);
+    /* color: black; */
+    transform: translate(5px,3px);
+}
+
+/* contact styles goes here */
+
+#contact {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 30px 0;
+    background-color: #303841;
+    color: white;
+    height: 200px;
+    position: relative;
+}
+
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    line-height: 2;
+}
+#contact a:hover{
+    transform: translate(0px,5px);
+}
+
+/* footer style goes here */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    height: 80px;
+}

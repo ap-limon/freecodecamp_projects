@@ -1,0 +1,17 @@
+#editor {
+    border: 1px dotted rgb(43, 9, 240);
+    height: 400px;
+    border-radius: 5px;
+}
+
+#preview {
+    border: 1px dotted rgb(43, 9, 240);
+    border-radius: 5px;
+    height: 400px;
+    overflow: auto;
+}
+
+#preview img {
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/survey_form.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="" rel="stylesheet"> -->
+    <title>Survey form</title>
+</head>
+<body>
+    <div class="layer1">
+        <div class="header">
+            <h1 id="title">Order& Get food in home</h1>
+            <p id="description">Please fill up form to meke sure it is the FOOD you want</p>
+        </div>
+        <form action="#" id="survey-form">
+            <div class="p-info">
+                <fieldset class="boom1">
+                <legend>Your infomation</legend>
+
+                    <!-- Name here -->
+                    <label for="name" id="name-label" class="col-25">Name: </label>
+                    <input type="text" name="name" id="name" class="col-75" placeholder="enter your name..." required><br>
+
+                    <!-- Email here -->
+                    <label for="email" id="email-label" class="col-25">Email:</label>
+                    <input type="email" name="email" id="email" class="col-75" placeholder="enter your email..."required><br>
+
+                    <!-- Phone here -->
+                    <label for="phone" class="col-25">Phone:</label>
+                    <input type="text" name="phone" id="phone" class="col-75" placeholder="enter your contact no..."><br>
+
+                    <!-- Adress here -->
+                    <label for="adress" class="col-25">Delivery adress:</label>
+                    <textarea name="dadrs" id="adress" class="col-75" style="height: 150px;" placeholder="enter the adress you want us to deliver food..."></textarea>
+                </fieldset>
+            </div>
+
+            
+            <!-- Food items -->
+            <div class="fdinfo">
+                <fieldset class="boom2">
+                    <legend>Foods you want</legend>
+
+                        <!-- Main course with checkbox -->
+                    <div id="m-course" class="col-150">
+                        <span class="ttl">Main course:</span><br>
+                        <input type="checkbox" name="m-course" id="burger" value="burger"><label for="burger">Burger</label><br>
+                        <input type="checkbox" name="m-course" id="pizza" value="pizza"><label for="pizza">pizza</label><br>
+                        <input type="checkbox" name="m-course" id="hotdog" value="hotdog"><label for="hotdog">Hot dog</label><br>
+                        <input type="checkbox" name="m-course" id="sndwich" value="sndwich"><label for="sndwich">Sandwich</label><br>
+                        <input type="checkbox" name="m-course" id="pasta" value="pasta"><label for="pasta">Pasta</label>
+                    </div>
+
+                    <!-- Cold drinks or desert with radio -->
+                    <div id="drinksordesert" class="col-250">
+                        <span class="ttl">Cold drinks & Desert:</span><br>
+                        <input type="radio" name="cddlist" id="pepsi" value="pepsi"><label for="pepsi">Pepsi</label><br>
+                        <input type="radio" name="cddlist" id="cola" value="cola"><label for="cola">Coca cola</label><br>
+                        <input type="radio" name="cddlist" id="cream" value="cream"><label for="cream">Ice-cream</label><br>
+                        <input type="radio" name="cddlist" id="coffee" value="coffee"><label for="coffee">Coffee</label>
+                    </div>
+
+                    <!-- Food quantity of the food with number -->
+                    <div id="f-quantity" class="col-250">
+                        <label for="number" id="number-label">Quantity of order:</label>
+                        <input type="number" id="number" name="number" min="1" max="50" placeholder="1">
+                    </div>
+
+                    <!-- Main ingredients with drop down list -->
+                    <div id="m-ingredient" class="col-150">
+                        <label for="dropdown" id="ingredient">Main ingredient:</label>
+                        <select id="dropdown" name="dropdown">
+                            <option value="Chicken">Chicken</option>
+                            <option value="Beef">Beef</option>
+                            <option value="Prawn">Prawn</option>
+                            <option value="Vegetable">Vegetable</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Submit button here -->
+            <div class="button">
+                <input type="submit" name="submit" id="submit" value="submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

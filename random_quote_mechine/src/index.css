@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 25px;
+}
+
+#quote-box {
+  background-color: white;
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: justify;
+}
+
+#text span {
+  font-size: 40px;
+}
+
+#author {
+  padding: 10px 0;
+  text-align: right;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.btns {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 45px;
+  text-align: center;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width:750px) {
+  #quote-box {
+    width: 100%;
+  }
+}
